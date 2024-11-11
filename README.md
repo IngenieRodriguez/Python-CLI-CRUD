@@ -20,7 +20,7 @@ This is a command-line interface (CLI) application written in Python that perfor
 
 3. **Run the application** by navigating to the project directory and typing:
    ```bash
-   python <filename>.py [command] [options]
+   python cli.py [command] [options]
    ```
 
 ### Available Commands
@@ -30,12 +30,12 @@ This is a command-line interface (CLI) application written in Python that perfor
 Add a new user to the JSON database with `name` and `lastname` fields.
 
 ```bash
-python <filename>.py new --name <name> --lastname <lastname>
+python cli.py new --name <name> --lastname <lastname>
 ```
 
 **Example:**
 ```bash
-python <filename>.py new --name John --lastname Doe
+python cli.py new --name John --lastname Doe
 ```
 
 #### 2. List All Users
@@ -43,7 +43,7 @@ python <filename>.py new --name John --lastname Doe
 Retrieve and display all users stored in the JSON database.
 
 ```bash
-python <filename>.py users
+python cli.py users
 ```
 
 #### 3. Get a Specific User
@@ -51,12 +51,12 @@ python <filename>.py users
 Retrieve and display the user with a specific `id`.
 
 ```bash
-python <filename>.py user <id>
+python cli.py user <id>
 ```
 
 **Example:**
 ```bash
-python <filename>.py user 1
+python cli.py user 1
 ```
 
 #### 4. Update a User
@@ -64,12 +64,12 @@ python <filename>.py user 1
 Update the `name` and/or `lastname` of a user with a specified `id`.
 
 ```bash
-python <filename>.py update <id> [--name <name>] [--lastname <lastname>]
+python cli.py update <id> [--name <name>] [--lastname <lastname>]
 ```
 
 **Example:**
 ```bash
-python <filename>.py update 1 --name Jane --lastname Smith
+python cli.py update 1 --name Jane --lastname Smith
 ```
 
 #### 5. Delete a User
@@ -77,12 +77,12 @@ python <filename>.py update 1 --name Jane --lastname Smith
 Delete a user with a specific `id` from the JSON database.
 
 ```bash
-python <filename>.py delete <id>
+python cli.py delete <id>
 ```
 
 **Example:**
 ```bash
-python <filename>.py delete 1
+python cli.py delete 1
 ```
 
 ---
